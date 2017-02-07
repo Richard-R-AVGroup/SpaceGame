@@ -19,7 +19,7 @@ public class objectDropHandler : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col) {
-		if (col.gameObject.tag == "Player") {
+		if (col.gameObject.tag == "Player") {//player walks into area, turns on gravity for the object to fall
 			mainRigidbody.useGravity = true;
 			mainRigidbody.isKinematic = false;
 			StartCoroutine ("DestroyCollision");
@@ -27,7 +27,7 @@ public class objectDropHandler : MonoBehaviour {
 	}
 
 	IEnumerator DestroyCollision(){
-		yield return new WaitForSeconds (1.0f);
+		yield return new WaitForSeconds (1.0f);//stopping the object from blocking the player after a short period
 		Destroy (mainRigidbody);
 		Destroy (objectCollider);
 		Destroy (collisionCollider);
