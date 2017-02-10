@@ -1166,7 +1166,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -1789,7 +1789,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -2393,7 +2393,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 429913481}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 30.55, y: 3.61, z: -5.18}
+  m_LocalPosition: {x: -5.03, y: 0.93, z: 0.28}
   m_LocalScale: {x: 0.57, y: 1.4472487, z: 0.57}
   m_Children:
   - {fileID: 1413455153}
@@ -3340,7 +3340,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -3819,7 +3819,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -4418,7 +4418,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
       propertyPath: m_LocalScale.x
@@ -4510,7 +4510,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: d06b512d5e173d74b88f1929a79a9f55, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: d06b512d5e173d74b88f1929a79a9f55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4656,7 +4656,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -5165,13 +5165,13 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 0
-  m_Color: {r: 0.2352941, g: 0.86505175, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.39
   m_Range: 10
   m_SpotAngle: 87.71524
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5185,7 +5185,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -5721,7 +5721,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -6026,7 +6026,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -6479,7 +6479,7 @@ Prefab:
     - target: {fileID: 114278221552065084, guid: cfef738579cd02c40b3b1d63e67b0f84,
         type: 2}
       propertyPath: isLocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114278221552065084, guid: cfef738579cd02c40b3b1d63e67b0f84,
         type: 2}
@@ -6644,7 +6644,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -6766,7 +6766,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4184432806259810, guid: c95aae87825c9684dbe31462159f1685, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 33668255562416774, guid: c95aae87825c9684dbe31462159f1685,
         type: 2}
@@ -7393,7 +7393,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -7921,7 +7921,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -8329,7 +8329,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -8663,6 +8663,67 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4547924043023044686013d4ca164a97, type: 3}
+  m_IsPrefabParent: 0
+--- !u!1001 &1647870298
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1268168791}
+    m_Modifications:
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.324
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 4.538
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700717951193844, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479206653413640, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+      propertyPath: m_Name
+      value: fallLamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 54864491855294946, guid: bb0f8b874f76b3943a667a6d1675876e,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 65256127072493138, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+    - {fileID: 114379431399369980, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: bb0f8b874f76b3943a667a6d1675876e, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1664097154 stripped
 Transform:
@@ -9587,7 +9648,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -9887,7 +9948,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -10031,7 +10092,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -10577,7 +10638,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0da03c443b46ea54dbe4803d35919ed8, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0da03c443b46ea54dbe4803d35919ed8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -10793,7 +10854,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4184432806259810, guid: c95aae87825c9684dbe31462159f1685, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4184432806259810, guid: c95aae87825c9684dbe31462159f1685, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10878,7 +10939,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -10989,13 +11050,13 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 0
-  m_Color: {r: 0.2352941, g: 0.86505175, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.39
   m_Range: 10
   m_SpotAngle: 87.71524
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -11009,7 +11070,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -11232,7 +11293,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -11638,7 +11699,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4277753947505414, guid: 1fa3d8d1108dce74dbbf6f33fa2eefca, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1881660561172612, guid: 1fa3d8d1108dce74dbbf6f33fa2eefca, type: 2}
       propertyPath: m_Name
