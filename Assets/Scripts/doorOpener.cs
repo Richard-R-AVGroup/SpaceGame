@@ -13,6 +13,9 @@ public class doorOpener : MonoBehaviour {
 	//Press "f" to open the door and "g" to close the door
 	//Make sure the main character is tagged "player"
 
+	//TEST
+
+
 	//Smoothly open door
 	float smooth = 2.0f;
 	float doorOpenAngle = 90.0f;
