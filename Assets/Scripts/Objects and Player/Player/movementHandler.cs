@@ -10,11 +10,14 @@ public class movementHandler : MonoBehaviour {
 	private float defaultMoveSpeed;
 	public float rotationSpeed;
 
-	private float jumpSpeed;
-
 	public bool hasFlashlight = false;
 	private bool flashlightOn = false;
 	public Light flashlight;
+
+	private Rigidbody mainRig;
+	private float jumpSpeed = 250f;
+
+	public bool boxPickedUp = false;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +25,8 @@ public class movementHandler : MonoBehaviour {
 		flashlight.enabled = false;
 		Cursor.lockState = CursorLockMode.Locked;
 		defaultMoveSpeed = moveSpeed;
+
+		mainRig = GetComponent<Rigidbody> ();
 	}
 	
 	// Update is called once per frame
@@ -37,6 +42,10 @@ public class movementHandler : MonoBehaviour {
 		}
 		if (Input.GetKey ("d")) {//right
 			transform.Translate (Vector3.right * Time.deltaTime * moveSpeed);
+		}
+
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			mainRig.AddForce (Vector3.up * jumpSpeed);
 		}
 
 		if (Input.GetKey(KeyCode.LeftShift)) {//sprinting TODO, add a restriction to sprint
