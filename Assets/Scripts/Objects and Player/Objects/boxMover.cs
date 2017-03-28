@@ -60,7 +60,7 @@ public class boxMover : MonoBehaviour {
 			highlighted = true;
 		}
 
-		if (distToPlayer >= 5f) {
+		if (distToPlayer >= 5f && pickedUp != true) {
 			rend.material.shader = shaderDefault;//switching back to the regular shader version
 			uiHandler.Instance.defaultCenterCursor.SetActive (true);
 			uiHandler.Instance.pickupCenterCursor.SetActive (false);
@@ -88,11 +88,13 @@ public class boxMover : MonoBehaviour {
 
 	void OnMouseExit() {
 		if (pickedUp == false) {
-			rend.material.shader = shaderDefault;//switching back to the regular shader version
-			uiHandler.Instance.defaultCenterCursor.SetActive (true);
-			uiHandler.Instance.pickupCenterCursor.SetActive (false);
+			if (movementHandler.Instance.boxPickedUp == false) {
+				rend.material.shader = shaderDefault;//switching back to the regular shader version
+				uiHandler.Instance.defaultCenterCursor.SetActive (true);
+				uiHandler.Instance.pickupCenterCursor.SetActive (false);
 
-			highlighted = false;
+				highlighted = false;
+			}
 		}
 	}
 }
