@@ -27,7 +27,6 @@ public class boxMover : MonoBehaviour {
 		shaderDefault = rend.material.shader;//getting the default shader
 
 		boxHoldPos = GameObject.Find ("BoxHoldPos");
-
 		playerMain = GameObject.Find ("Player");
 	}
 	
@@ -36,31 +35,33 @@ public class boxMover : MonoBehaviour {
 		distToPlayer = Vector3.Distance(playerMain.transform.position, transform.position);
 
 		if (highlighted == true) {
-			if (Input.GetKeyDown (KeyCode.G)) {
+			if (Input.GetKeyDown (KeyCode.F)) {
 				if (pickedUp == false) {
 					pickedUp = true;
-					mainRigd.constraints = RigidbodyConstraints.FreezeRotation;
-					mainRigd.useGravity = false;
-					uiHandler.Instance.defaultCenterCursor.SetActive (true);
+					mainRigd.constraints = RigidbodyConstraints.FreezeRotation;//freezing rotation
+					mainRigd.useGravity = false;//disabling gravity
+					uiHandler.Instance.defaultCenterCursor.SetActive (true);//turning of ui grab element
 					uiHandler.Instance.pickupCenterCursor.SetActive (false);
 					movementHandler.Instance.boxPickedUp = true;
-				} else {
+				}
+			}
+			if (pickedUp == true) {
+				if (Input.GetKeyDown (KeyCode.Q)) {//dropping the box
 					pickedUp = false;
-					mainRigd.constraints = RigidbodyConstraints.None;
-					mainRigd.useGravity = true;
+					mainRigd.constraints = RigidbodyConstraints.None;//removing all rigidbody constraints
+					mainRigd.useGravity = true;//turning gravity back on
 					movementHandler.Instance.boxPickedUp = false;
-					pickupScaling.Instance.scrollDistScaler = 4.0f;
+					pickupScaling.Instance.scrollDistScaler = 4.0f;//reseting the scroll scaler to default distance (4)
 				}
 			}
 		}
 
 		if (pickedUp == true) {
-			transform.position = Vector3.MoveTowards (this.transform.position, boxHoldPos.transform.position, speed * Time.deltaTime);
-
-			highlighted = true;
+			transform.position = Vector3.MoveTowards (this.transform.position, boxHoldPos.transform.position, speed * Time.deltaTime);// moving towards the box holding position(child of the player object)
+			highlighted = true;//ensuring the box is permantly highlighted
 		}
 
-		if (distToPlayer >= 5f && pickedUp != true) {
+		if (distToPlayer >= 5f && pickedUp != true) {//only allowing the player to grab the box within a certain distance
 			rend.material.shader = shaderDefault;//switching back to the regular shader version
 			uiHandler.Instance.defaultCenterCursor.SetActive (true);
 			uiHandler.Instance.pickupCenterCursor.SetActive (false);
@@ -74,12 +75,8 @@ public class boxMover : MonoBehaviour {
 			if (movementHandler.Instance.boxPickedUp == false) {
 				if (pickedUp == false) {
 					rend.material.shader = Shader.Find ("Self-Illumin/Outlined Diffuse");//switching to the highlighted shader version
-
-					if (movementHandler.Instance.hasFlashlight != true) {//making it so when the flashlight is picked up, the cursor is able to swap bac
-						uiHandler.Instance.defaultCenterCursor.SetActive (false);
-						uiHandler.Instance.pickupCenterCursor.SetActive (true);
-					}
-
+					uiHandler.Instance.defaultCenterCursor.SetActive (false);
+					uiHandler.Instance.pickupCenterCursor.SetActive (true);
 					highlighted = true;
 				}
 			}

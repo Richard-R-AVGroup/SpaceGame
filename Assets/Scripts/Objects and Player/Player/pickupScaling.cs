@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class pickupScaling : MonoBehaviour {
 
+	/**
+	 * SCRIPT FOR SCALING THE BOX MOVING LOCATION BASED ON:
+	 * player height, camera angle, distance
+	 * WEIRD AS FUCK MATH, Probably shouldn't mess with it without talking to me(Harrison)
+	 **/
+
+
 	public static pickupScaling Instance;
 
 	public float scrollDistScaler = 4.0f;
