@@ -30,7 +30,7 @@ public class flashlightHandler : MonoBehaviour {
 		if (distToPlayer <= 2f) {
 			rend.material.shader = Shader.Find ("Self-Illumin/Outlined Diffuse");//switching to the highlighted shader version
 
-			if (movementHandler.Instance.hasFlashlight != true) {//making it so when the flashlight is picked up, the cursor is able to swap bac
+			if (movementHandler.Instance.hasFlashlight != true) {//making it so when the flashlight is picked up, the cursor is able to swap back
 				uiHandler.Instance.defaultCenterCursor.SetActive (false);
 				uiHandler.Instance.pickupCenterCursor.SetActive (true);
 			}
