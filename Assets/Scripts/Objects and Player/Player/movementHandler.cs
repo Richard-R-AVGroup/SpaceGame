@@ -23,7 +23,7 @@ public class movementHandler : MonoBehaviour {
 	void Start () {
 		Instance = this;
 		flashlight.enabled = false;
-		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.lockState = CursorLockMode.Locked;//locking cursor to centrer of the screen
 		defaultMoveSpeed = moveSpeed;
 
 		mainRig = GetComponent<Rigidbody> ();
@@ -44,11 +44,11 @@ public class movementHandler : MonoBehaviour {
 			transform.Translate (Vector3.right * Time.deltaTime * moveSpeed);
 		}
 
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetKeyDown (KeyCode.Space)) {//jumping
 			mainRig.AddForce (Vector3.up * jumpSpeed);
 		}
 
-		if (Input.GetKey(KeyCode.LeftShift)) {//sprinting TODO, add a restriction to sprint
+		if (Input.GetKey(KeyCode.LeftShift)) {//sprinting
 			moveSpeed = defaultMoveSpeed * 2;
 		}
 		if (Input.GetKeyUp (KeyCode.LeftShift)) {//reseting speed after sprint is relesed
@@ -60,7 +60,7 @@ public class movementHandler : MonoBehaviour {
 				if (flashlightOn == true) {
 					flashlight.enabled = false;
 					flashlightOn = false;
-				} else if (flashlightOn == false) {
+				} else if (flashlightOn == false) {//turing off flashlight
 					flashlight.enabled = true;
 					flashlightOn = true;
 				}
